@@ -24,13 +24,13 @@
 			<input type="hidden" th:field="*{id}"/>
 			
 			<input type="text" th:field="*{firstname}"
-				   class="form-control mb-4 col-4" placeholder="First Name">
+				   class="form-control mb-4 col-4" placeholder="First Name" required autofocus>
 				   
 		    <input type="text" th:field="*{lastname}"
 				   class="form-control mb-4 col-4" placeholder="Last Name">
 				   
-		    <input type="text" th:field="*{email}"
-				   class="form-control mb-4 col-4" placeholder="Email">
+		    <input type="email" th:field="*{email}"
+				   class="form-control mb-4 col-4" placeholder="Email" required>
 				   
 		    <button type="submit" class="btn btn-info col-2">Save</button>
 	
